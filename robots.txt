@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aitlahcenelhassan983-stack.github.io/bank.mashallah/sitemap.xml
