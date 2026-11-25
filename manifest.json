@@ -1,0 +1,17 @@
+{
+  "name": "بنك مشاء الله",
+  "short_name": "بنك مشاء الله",
+  "description": "بنك مشاء الله - خدمات بنكية",
+  "start_url": "/bank.mashallah/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0a7a42",
+  "icons": [
+    {
+      "src": "logo.png.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
