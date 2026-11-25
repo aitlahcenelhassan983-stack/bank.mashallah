@@ -1,11 +1,11 @@
 {
-  "name": "بنك مشاء الله",
-  "short_name": "بنك مشاء الله",
-  "description": "بنك مشاء الله - خدمات بنكية",
+  "name": "بنك ما شاء الله",
+  "short_name": "بنك ما شاء الله",
+  "description": "بوابات الأستاذ الحسن أيت لحسن: التربية، الأذكار، القرآن، الدروس، الأدب، والمكتبة الدينية",
   "start_url": "/bank.mashallah/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0a7a42",
+  "theme_color": "#065f46",
   "icons": [
     {
       "src": "logo.png.jpg",
