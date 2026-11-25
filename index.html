@@ -10,12 +10,16 @@
 <!-- End Google Tag Manager -->
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial;background:#f8fafc;color:#111827;padding:12px;line-height:1.8}
+body{font-family:Arial;background:#f8fafc;color:#111827;padding:12px;line-height:1.8;padding-top:56px;padding-bottom:70px}
 .wrap{max-width:750px;margin:auto}
+/* شريط العودة الثابت في الأعلى */
+.topbar{position:fixed;top:0;right:0;left:0;z-index:100;background:#065f46;color:#fff;padding:8px 12px;display:flex;justify-content:space-between;align-items:center;gap:8px;box-shadow:0 2px 10px rgba(0,0,0,.2)}
+.topbar b{font-size:13px}
+.topbar a{background:#fff;color:#065f46;text-decoration:none;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:900;white-space:nowrap}
 .head{background:#065f46;color:#fff;border-radius:18px;padding:22px;text-align:center}
 .head h1{font-size:25px;font-weight:900}
 .head p{color:#a7f3d0;font-size:13px;margin-top:6px}
-.search{width:100%;padding:12px;border:1px solid #e5e7eb;border-radius:12px;margin:12px 0;font-size:15px;outline:none;position:sticky;top:8px;background:#fff;z-index:10}
+.search{width:100%;padding:12px;border:1px solid #e5e7eb;border-radius:12px;margin:12px 0;font-size:15px;outline:none;position:sticky;top:48px;background:#fff;z-index:10}
 .gate{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:16px;margin-bottom:16px}
 .gate h2{font-size:18px;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid #f1f5f9}
 .gate h2 span{font-size:12px;background:#ecfdf5;color:#065f46;padding:3px 8px;border-radius:20px;margin-right:6px}
@@ -28,17 +32,28 @@ body{font-family:Arial;background:#f8fafc;color:#111827;padding:12px;line-height
 .link a{display:inline-block;background:#065f46;color:#fff;text-decoration:none;padding:8px 16px;border-radius:20px;font-size:13px;font-weight:900}
 .link a.gold{background:#f59e0b;color:#111}
 .link a.blue{background:#1e3a5f}
+/* زر عائم في الأسفل */
+.float-back{position:fixed;bottom:12px;right:12px;left:12px;z-index:100;text-align:center}
+.float-back a{display:inline-block;background:#111827;color:#fff;text-decoration:none;padding:11px 22px;border-radius:25px;font-weight:900;font-size:14px;box-shadow:0 5px 15px rgba(0,0,0,.3)}
 .foot{text-align:center;font-size:12px;color:#6b7280;margin:15px 0;line-height:1.8}
 </style>
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRBW6F6G" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- شريط العودة إلى الموقع الأصلي -->
+<div class="topbar">
+  <b>🌿 بنك ما شاء الله</b>
+  <a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/">🏠 العودة إلى الموقع الأصلي</a>
+</div>
+
 <div class="wrap">
 
 <div class="head">
 <h1>🌿 بنك ما شاء الله</h1>
 <p>بوابات الأستاذ الحسن أيت لحسن | تارودانت - المغرب</p>
 <p style="margin-top:10px;background:rgba(255,255,255,.15);padding:7px;border-radius:10px;font-size:12px;">صفحة خفيفة تجمع كل المشاريع، مع شرح واضح لكل بوابة وكل رابط</p>
+<a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/" style="display:inline-block;margin-top:12px;background:#fff;color:#065f46;text-decoration:none;padding:9px 18px;border-radius:20px;font-weight:900;font-size:13px;">🏠 العودة إلى الموقع الأصلي</a>
 </div>
 
 <input class="search" id="s" oninput="filter()" placeholder="🔍 ابحث عن أي بوابة... مثلا: مسرحية، باقيات، دروس...">
@@ -47,73 +62,79 @@ body{font-family:Arial;background:#f8fafc;color:#111827;padding:12px;line-height
 <div class="gate" data-t="رئيسية">
 <h2>🏠 البوابة الرئيسية <span>الموقع الأم</span></h2>
 <p>هذه هي بداية الموقع، ومنها تنطلق إلى كل البوابات الأخرى. هنا تجد الموقع الرئيسي، والتعريف بالأستاذ، وصفحة المفاجأة.</p>
-<div class="link"><b>الموقع الرئيسي - ما شاء الله تربية</b><div class="desc"><span>ما هو؟ الموقع الأم الذي يجمع كل الأعمال التربوية والروحية.</span><span>ماذا تجد فيه؟ اخترت لكم اليوم، وأوقات الصلاة، والرقية الشرعية.</span><span>لمن هو؟ لكل زائر يريد أن يبدأ جولته من المكان الصحيح.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/" target="_blank">دخول ↗</a></div>
-<div class="link"><b>نبذة عن الأستاذ</b><div class="desc"><span>ما هي؟ صفحة تعرف بالأستاذ الحسن أيت لحسن.</span><span>ماذا تجد فيها؟ السيرة الذاتية والمسار المهني في التعليم.</span><span>لماذا تقرأها؟ لتعرف من يقف خلف هذا المشروع التربوي.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/ssira-datya.html" target="_blank">دخول ↗</a></div>
-<div class="link"><b>مفاجأة</b><div class="desc"><span>ما هي؟ صفحة خاصة فيها مفاجأة للزوار.</span><span>لمن هي؟ للتلاميذ والأصدقاء والمتابعين.</span><span>لماذا تزورها؟ لأن فيها رسالة محبة وتقدير.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/mofajaa.html" target="_blank">دخول ↗</a></div>
+<div class="link"><b>الموقع الرئيسي - ما شاء الله تربية</b><div class="desc"><span>ما هو؟ الموقع الأم الذي يجمع كل الأعمال التربوية والروحية.</span><span>ماذا تجد فيه؟ اخترت لكم اليوم، وأوقات الصلاة، والرقية الشرعية.</span><span>لمن هو؟ لكل زائر يريد أن يبدأ جولته من المكان الصحيح.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/">دخول ↗</a></div>
+<div class="link"><b>نبذة عن الأستاذ</b><div class="desc"><span>ما هي؟ صفحة تعرف بالأستاذ الحسن أيت لحسن.</span><span>ماذا تجد فيها؟ السيرة الذاتية والمسار المهني في التعليم.</span><span>لماذا تقرأها؟ لتعرف من يقف خلف هذا المشروع التربوي.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/ssira-datya.html">دخول ↗</a></div>
+<div class="link"><b>مفاجأة</b><div class="desc"><span>ما هي؟ صفحة خاصة فيها مفاجأة للزوار.</span><span>لمن هي؟ للتلاميذ والأصدقاء والمتابعين.</span><span>لماذا تزورها؟ لأن فيها رسالة محبة وتقدير.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/mofajaa.html">دخول ↗</a></div>
 </div>
 
 <!-- ===== البوابة 2: التربية ===== -->
 <div class="gate" data-t="تربية مستجدات اخبار">
 <h2>📰 بوابة التربية والمستجدات <span>أخبار التعليم</span></h2>
 <p>هذه البوابة مخصصة لأخبار التعليم، وقواعد اللغة العربية، وأدوات الأستاذ في عمله اليومي.</p>
-<div class="link"><b>مستجدات التربية</b><div class="desc"><span>ما هي؟ صفحة أخبار التعليم والمستجدات التربوية.</span><span>ماذا تجد فيها؟ توأمة تازمورت مع لونغساندز، وأخبار المدرسة.</span><span>لمن هي؟ للأساتذة والآباء والمهتمين بالشأن التربوي.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/khabar.html" target="_blank">دخول ↗</a></div>
-<div class="link"><b>فضاء التربية - الآجرومية</b><div class="desc"><span>ما هو؟ شرح مبسط لقواعد اللغة العربية.</span><span>ماذا تجد فيه؟ دروس الآجرومية للمبتدئين.</span><span>لمن هو؟ للتلاميذ الذين يريدون فهم النحو بسهولة.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/Alajromya.html" target="_blank">دخول ↗</a></div>
-<div class="link"><b>مكتب الأستاذ</b><div class="desc"><span>ما هو؟ بوابة خارجية مستقلة لأدوات الأستاذ.</span><span>ماذا تجد فيه؟ وثائق وتنظيمات تساعد في العمل.</span><span>لمن هو؟ للأساتذة الذين يبحثون عن أدوات عملية.</span></div><a class="blue" href="https://mashaallahtarbeyya-cpu.github.io/Maktab-lostad/" target="_blank">دخول ↗</a></div>
-<div class="link"><b>المفكرة الآلية التقنية</b><div class="desc"><span>ما هي؟ مفكرة رقمية لتنظيم العمل.</span><span>ماذا تجد فيها؟ تخطيط يومي وأسبوعي للأستاذ.</span><span>لماذا هي مفيدة؟ لأنها توفر الوقت وتنظم الجهد.</span></div><a class="blue" href="https://mashaallahtarbeyya-cpu.github.io/Modakira/" target="_blank">دخول ↗</a></div>
-<div class="link"><b>إلى المريض النفسي</b><div class="desc"><span>ما هي؟ صفحة دعم نفسي وتربوي.</span><span>ماذا تجد فيها؟ كلمات هادئة تبعث الطمأنينة والأمل.</span><span>لمن هي؟ لكل من يحتاج إلى مواساة ودعم.</span></div><a class="blue" href="https://mashaallahtarbeyya-cpu.github.io/Psychologie-/" target="_blank">دخول ↗</a></div>
+<div class="link"><b>مستجدات التربية</b><div class="desc"><span>ما هي؟ صفحة أخبار التعليم والمستجدات التربوية.</span><span>ماذا تجد فيها؟ توأمة تازمورت مع لونغساندز، وأخبار المدرسة.</span><span>لمن هي؟ للأساتذة والآباء والمهتمين بالشأن التربوي.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/khabar.html">دخول ↗</a></div>
+<div class="link"><b>فضاء التربية - الآجرومية</b><div class="desc"><span>ما هو؟ شرح مبسط لقواعد اللغة العربية.</span><span>ماذا تجد فيه؟ دروس الآجرومية للمبتدئين.</span><span>لمن هو؟ للتلاميذ الذين يريدون فهم النحو بسهولة.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/Alajromya.html">دخول ↗</a></div>
+<div class="link"><b>مكتب الأستاذ</b><div class="desc"><span>ما هو؟ بوابة خارجية مستقلة لأدوات الأستاذ.</span><span>ماذا تجد فيه؟ وثائق وتنظيمات تساعد في العمل.</span><span>لمن هو؟ للأساتذة الذين يبحثون عن أدوات عملية.</span></div><a class="blue" href="https://mashaallahtarbeyya-cpu.github.io/Maktab-lostad/">دخول ↗</a></div>
+<div class="link"><b>المفكرة الآلية التقنية</b><div class="desc"><span>ما هي؟ مفكرة رقمية لتنظيم العمل.</span><span>ماذا تجد فيها؟ تخطيط يومي وأسبوعي للأستاذ.</span><span>لماذا هي مفيدة؟ لأنها توفر الوقت وتنظم الجهد.</span></div><a class="blue" href="https://mashaallahtarbeyya-cpu.github.io/Modakira/">دخول ↗</a></div>
+<div class="link"><b>إلى المريض النفسي</b><div class="desc"><span>ما هي؟ صفحة دعم نفسي وتربوي.</span><span>ماذا تجد فيها؟ كلمات هادئة تبعث الطمأنينة والأمل.</span><span>لمن هي؟ لكل من يحتاج إلى مواساة ودعم.</span></div><a class="blue" href="https://mashaallahtarbeyya-cpu.github.io/Psychologie-/">دخول ↗</a></div>
 </div>
 
 <!-- ===== البوابة 3: المتعلم ===== -->
 <div class="gate" data-t="متعلم دروس توزيع تقويم ادوات">
 <h2>🎓 بوابة المتعلم وأدوات الأستاذ <span>دروس وأدوات</span></h2>
 <p>هذه البوابة موجهة إلى المتعلم وإلى الأستاذ معًا. فيها الدروس، والتخطيط، وأدوات تنظيم القسم.</p>
-<div class="link"><b>فضاء المتعلم</b><div class="desc"><span>ما هو؟ فضاء للأنشطة والدعم.</span><span>ماذا تجد فيه؟ أنشطة تساعد المتعلم على التعلم الذاتي.</span><span>لمن هو؟ لتلاميذ المرحلة الابتدائية.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/fadaa-tilmid.html" target="_blank">دخول ↗</a></div>
-<div class="link"><b>الدروس - الرياضيات / اللغة</b><div class="desc"><span>ما هي؟ دروس مصنفة حسب المادة والمستوى.</span><span>ماذا تجد فيها؟ دروس الرياضيات واللغة العربية.</span><span>لماذا هي مفيدة؟ لأنها مرتبة وسهلة الوصول.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/arryada.html" target="_blank">دخول ↗</a></div>
-<div class="link"><b>التوزيع السنوي</b><div class="desc"><span>ما هو؟ التخطيط السنوي للسنة الدراسية.</span><span>ماذا تجد فيه؟ توزيع الدروس على الأسابيع والشهور.</span><span>لمن هو؟ للأساتذة الذين يريدون تنظيم عملهم.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/attawzi3-assanawi.html" target="_blank">دخول ↗</a></div>
-<div class="link"><b>مستجدات اللغة العربية ومعايير التنقيط</b><div class="desc"><span>ما هي؟ صفحة التقويم والتنقيط.</span><span>ماذا تجد فيها؟ معايير تنقيط الرياضيات واللغة.</span><span>لمن هي؟ للأساتذة والمتعلمين وأولياء الأمور.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/taqyim-riyada.html" target="_blank">دخول ↗</a></div>
-<div class="link"><b>خريطة القسم - أدوات الأستاذ</b><div class="desc"><span>ما هي؟ أداة لتنظيم القسم.</span><span>ماذا تجد فيها؟ طريقة توزيع التلاميذ داخل القسم.</span><span>لماذا هي مهمة؟ لأن تنظيم القسم يساعد على التعلم.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/adawatostad.html" target="_blank">دخول ↗</a></div>
+<div class="link"><b>فضاء المتعلم</b><div class="desc"><span>ما هو؟ فضاء للأنشطة والدعم.</span><span>ماذا تجد فيه؟ أنشطة تساعد المتعلم على التعلم الذاتي.</span><span>لمن هو؟ لتلاميذ المرحلة الابتدائية.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/fadaa-tilmid.html">دخول ↗</a></div>
+<div class="link"><b>الدروس - الرياضيات / اللغة</b><div class="desc"><span>ما هي؟ دروس مصنفة حسب المادة والمستوى.</span><span>ماذا تجد فيها؟ دروس الرياضيات واللغة العربية.</span><span>لماذا هي مفيدة؟ لأنها مرتبة وسهلة الوصول.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/arryada.html">دخول ↗</a></div>
+<div class="link"><b>التوزيع السنوي</b><div class="desc"><span>ما هو؟ التخطيط السنوي للسنة الدراسية.</span><span>ماذا تجد فيه؟ توزيع الدروس على الأسابيع والشهور.</span><span>لمن هو؟ للأساتذة الذين يريدون تنظيم عملهم.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/attawzi3-assanawi.html">دخول ↗</a></div>
+<div class="link"><b>مستجدات اللغة العربية ومعايير التنقيط</b><div class="desc"><span>ما هي؟ صفحة التقويم والتنقيط.</span><span>ماذا تجد فيها؟ معايير تنقيط الرياضيات واللغة.</span><span>لمن هي؟ للأساتذة والمتعلمين وأولياء الأمور.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/taqyim-riyada.html">دخول ↗</a></div>
+<div class="link"><b>خريطة القسم - أدوات الأستاذ</b><div class="desc"><span>ما هي؟ أداة لتنظيم القسم.</span><span>ماذا تجد فيها؟ طريقة توزيع التلاميذ داخل القسم.</span><span>لماذا هي مهمة؟ لأن تنظيم القسم يساعد على التعلم.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/adawatostad.html">دخول ↗</a></div>
 </div>
 
 <!-- ===== البوابة 4: الروحية ===== -->
 <div class="gate" data-t="روحية باقيات حصن رقية قران صلاة">
 <h2>🤲 البوابة الروحية <span>الأذكار والقرآن</span></h2>
 <p>هذه البوابة هي قلب الموقع. فيها الأذكار والقرآن الكريم والرقية الشرعية، وهي الأكثر زيارة.</p>
-<div class="link"><b>الباقيات الصالحات - تطبيق</b><div class="desc"><span>ما هو؟ تطبيق الأذكار الذهبي.</span><span>ماذا تجد فيه؟ التسبيح والاستغفار والذكر اليومي.</span><span>لمن هو؟ لكل مسلم يريد المحافظة على أذكاره.</span></div><a class="gold" href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/alba9yat.html" target="_blank">افتح التطبيق ↗</a></div>
-<div class="link"><b>حصن المسلم</b><div class="desc"><span>ما هو؟ كتاب الأذكار والأدعية.</span><span>ماذا تجد فيه؟ أذكار الصباح والمساء وأدعية يومية.</span><span>لماذا تقرأه؟ لأنه حصن للمسلم في يومه وليلته.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/hisn.html" target="_blank">دخول ↗</a></div>
-<div class="link"><b>إذاعة الرقية الشرعية - بث حي</b><div class="desc"><span>ما هي؟ إذاعة للرقية الشرعية.</span><span>أين تجدها؟ في الموقع الرئيسي، بث مباشر.</span><span>لمن هي؟ لمن يريد الاستماع إلى الرقية بقلب مطمئن.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/" target="_blank">استمع ↗</a></div>
-<div class="link"><b>الختمة السريعة للقرآن الكريم</b><div class="desc"><span>ما هي؟ ختمة للقرآن الكريم.</span><span>ما ميزتها؟ أنها تحفظ مكان التوقف.</span><span>لمن هي؟ لمن يريد ختم القرآن في وقت يسير.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/" target="_blank">استمع ↗</a></div>
+<div class="link"><b>الباقيات الصالحات - تطبيق</b><div class="desc"><span>ما هو؟ تطبيق الأذكار الذهبي.</span><span>ماذا تجد فيه؟ التسبيح والاستغفار والذكر اليومي.</span><span>لمن هو؟ لكل مسلم يريد المحافظة على أذكاره.</span></div><a class="gold" href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/alba9yat.html">افتح التطبيق ↗</a></div>
+<div class="link"><b>حصن المسلم</b><div class="desc"><span>ما هو؟ كتاب الأذكار والأدعية.</span><span>ماذا تجد فيه؟ أذكار الصباح والمساء وأدعية يومية.</span><span>لماذا تقرأه؟ لأنه حصن للمسلم في يومه وليلته.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/hisn.html">دخول ↗</a></div>
+<div class="link"><b>إذاعة الرقية الشرعية - بث حي</b><div class="desc"><span>ما هي؟ إذاعة للرقية الشرعية.</span><span>أين تجدها؟ في الموقع الرئيسي، بث مباشر.</span><span>لمن هي؟ لمن يريد الاستماع إلى الرقية بقلب مطمئن.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/">استمع ↗</a></div>
+<div class="link"><b>الختمة السريعة للقرآن الكريم</b><div class="desc"><span>ما هي؟ ختمة للقرآن الكريم.</span><span>ما ميزتها؟ أنها تحفظ مكان التوقف.</span><span>لمن هي؟ لمن يريد ختم القرآن في وقت يسير.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/">استمع ↗</a></div>
 </div>
 
 <!-- ===== البوابة 5: الأدب ===== -->
 <div class="gate" data-t="ادب مسرحية شعر نفحات مختارات">
 <h2>🎭 بوابة الأدب والمسرح <span>نفحات شعرية</span></h2>
 <p>هذه البوابة مخصصة للإبداع الأدبي. فيها المسرح المدرسي والخواطر الشعرية.</p>
-<div class="link"><b>مسرحية اليتيمة - اللغة العربية</b><div class="desc"><span>ما هي؟ مسرحية مدرسية باللغة العربية.</span><span>ماذا تجد فيها؟ النص المسرحي مع الصوت.</span><span>لمن هي؟ للأساتذة والتلاميذ الذين يريدون تقديم عرض مسرحي.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/massrahya-alyatima.html" target="_blank">دخول ↗</a></div>
-<div class="link"><b>مختارات الأستاذ</b><div class="desc"><span>ما هي؟ مختارات أدبية من كتابات الأستاذ.</span><span>ماذا تجد فيها؟ من وحي السكون والرحلة، وخواطر أدبية.</span><span>لماذا تقرأها؟ لأنها كتابات صادقة تلامس القلب.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/favorites-v2.html" target="_blank">دخول ↗</a></div>
+<div class="link"><b>مسرحية اليتيمة - اللغة العربية</b><div class="desc"><span>ما هي؟ مسرحية مدرسية باللغة العربية.</span><span>ماذا تجد فيها؟ النص المسرحي مع الصوت.</span><span>لمن هي؟ للأساتذة والتلاميذ الذين يريدون تقديم عرض مسرحي.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/massrahya-alyatima.html">دخول ↗</a></div>
+<div class="link"><b>مختارات الأستاذ</b><div class="desc"><span>ما هي؟ مختارات أدبية من كتابات الأستاذ.</span><span>ماذا تجد فيها؟ من وحي السكون والرحلة، وخواطر أدبية.</span><span>لماذا تقرأها؟ لأنها كتابات صادقة تلامس القلب.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/favorites-v2.html">دخول ↗</a></div>
 </div>
 
 <!-- ===== البوابة 6: المكتبة ===== -->
 <div class="gate" data-t="مكتبة كتب تحميل">
 <h2>📚 بوابة المكتبة الدينية <span>13 كتابا</span></h2>
 <p>هذه البوابة مكتبة دينية كاملة. يمكنك تحميل الكتب واحدًا واحدًا، أو تحميل المكتبة كاملة.</p>
-<div class="link"><b>تحميل الكتب واحدًا واحدًا</b><div class="desc"><span>ما هو؟ رابط إلى موقع Archive.org.</span><span>ماذا تجد فيه؟ 13 كتابًا، تختار منها ما تريد.</span><span>كيف تحمّل؟ تضغط على الكتاب ثم على زر التحميل.</span></div><a class="gold" href="https://archive.org/download/noor-book.com-11_202611/" target="_blank">تحميل ↗</a></div>
-<div class="link"><b>تحميل المكتبة كاملة PDF</b><div class="desc"><span>ما هو؟ رابط واحد لتحميل كل الكتب.</span><span>ما ميزته؟ زر واحد يهبط كل المكتبة بصيغة PDF.</span><span>لمن هو؟ لمن يريد المكتبة كاملة في جهازه.</span></div><a class="gold" href="https://archive.org/download/maktaba-waqfia/" target="_blank">تحميل ↗</a></div>
+<div class="link"><b>تحميل الكتب واحدًا واحدًا</b><div class="desc"><span>ما هو؟ رابط إلى موقع Archive.org.</span><span>ماذا تجد فيه؟ 13 كتابًا، تختار منها ما تريد.</span><span>كيف تحمّل؟ تضغط على الكتاب ثم على زر التحميل.</span></div><a class="gold" href="https://archive.org/download/noor-book.com-11_202611/">تحميل ↗</a></div>
+<div class="link"><b>تحميل المكتبة كاملة PDF</b><div class="desc"><span>ما هو؟ رابط واحد لتحميل كل الكتب.</span><span>ما ميزته؟ زر واحد يهبط كل المكتبة بصيغة PDF.</span><span>لمن هو؟ لمن يريد المكتبة كاملة في جهازه.</span></div><a class="gold" href="https://archive.org/download/maktaba-waqfia/">تحميل ↗</a></div>
 </div>
 
 <!-- ===== البوابة 7: التواصل ===== -->
 <div class="gate" data-t="تواصل اتصل من نحن خصوصية شروط">
 <h2>📞 بوابة التواصل والقانون <span>رسمي</span></h2>
 <p>هذه البوابة الرسمية. فيها طرق التواصل، والتعريف بالموقع، والقوانين التي تحمي الزائر.</p>
-<div class="link"><b>اتصل بنا</b><div class="desc"><span>ما هي؟ صفحة التواصل مع الأستاذ.</span><span>ماذا تجد فيها؟ كل روابط التواصل.</span><span>متى تستعملها؟ عندما تريد أن ترسل سؤالًا أو رسالة.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/Rawabit.html" target="_blank">دخول ↗</a></div>
-<div class="link"><b>من نحن</b><div class="desc"><span>ما هي؟ صفحة التعريف بالموقع.</span><span>ماذا تجد فيها؟ أهداف موقع بنك ما شاء الله.</span><span>لماذا تقرأها؟ لتعرف رسالة الموقع ورؤيته.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/about-us.html" target="_blank">دخول ↗</a></div>
-<div class="link"><b>سياسة الخصوصية</b><div class="desc"><span>ما هي؟ وثيقة حماية بيانات الزوار.</span><span>ماذا توضح؟ كيف نحمي معلوماتك ولا نشاركها.</span><span>لماذا هي مهمة؟ لأنها تضمن لك التصفح الآمن.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/Privacy-Policy.html" target="_blank">دخول ↗</a></div>
-<div class="link"><b>شروط الاستخدام</b><div class="desc"><span>ما هي؟ القوانين المنظمة لاستعمال الموقع.</span><span>ماذا توضح؟ حقوق الزائر وواجباته.</span><span>لماذا تقرأها؟ لتعرف كيف تستخدم الموقع بشكل صحيح.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/Terms-of-Use.html" target="_blank">دخول ↗</a></div>
-<div class="link"><b>أرشيف GitHub القديم</b><div class="desc"><span>ما هو؟ أرشيف كل الملفات الأصلية.</span><span>أين هو؟ على موقع GitHub.</span><span>لمن هو؟ لمن يريد الاطلاع على الملفات الأصلية للموقع.</span></div><a class="blue" href="https://github.com/mashaallahtarbeyya-cpu/aitlahcen" target="_blank">الأرشيف ↗</a></div>
+<div class="link"><b>اتصل بنا</b><div class="desc"><span>ما هي؟ صفحة التواصل مع الأستاذ.</span><span>ماذا تجد فيها؟ كل روابط التواصل.</span><span>متى تستعملها؟ عندما تريد أن ترسل سؤالًا أو رسالة.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/Rawabit.html">دخول ↗</a></div>
+<div class="link"><b>من نحن</b><div class="desc"><span>ما هي؟ صفحة التعريف بالموقع.</span><span>ماذا تجد فيها؟ أهداف موقع بنك ما شاء الله.</span><span>لماذا تقرأها؟ لتعرف رسالة الموقع ورؤيته.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/about-us.html">دخول ↗</a></div>
+<div class="link"><b>سياسة الخصوصية</b><div class="desc"><span>ما هي؟ وثيقة حماية بيانات الزوار.</span><span>ماذا توضح؟ كيف نحمي معلوماتك ولا نشاركها.</span><span>لماذا هي مهمة؟ لأنها تضمن لك التصفح الآمن.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/Privacy-Policy.html">دخول ↗</a></div>
+<div class="link"><b>شروط الاستخدام</b><div class="desc"><span>ما هي؟ القوانين المنظمة لاستعمال الموقع.</span><span>ماذا توضح؟ حقوق الزائر وواجباته.</span><span>لماذا تقرأها؟ لتعرف كيف تستخدم الموقع بشكل صحيح.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/Terms-of-Use.html">دخول ↗</a></div>
+<div class="link"><b>أرشيف GitHub القديم</b><div class="desc"><span>ما هو؟ أرشيف كل الملفات الأصلية.</span><span>أين هو؟ على موقع GitHub.</span><span>لمن هو؟ لمن يريد الاطلاع على الملفات الأصلية للموقع.</span></div><a class="blue" href="https://github.com/mashaallahtarbeyya-cpu/aitlahcen">الأرشيف ↗</a></div>
 </div>
 
 <div class="foot">بنك ما شاء الله © 2026 - الأستاذ الحسن أيت لحسن<br>صفحة خفيفة، سريعة، ومشروحة في أسطر لكي يقبلها جوجل وتُؤرشف</div>
 
 </div>
+
+<!-- زر العودة العائم -->
+<div class="float-back">
+  <a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/">🏠 العودة إلى الموقع الأصلي</a>
+</div>
+
 <script>
 function filter(){
 let v=document.getElementById('s').value.toLowerCase();
