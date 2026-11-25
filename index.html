@@ -42,6 +42,42 @@ body{font-family:Arial;background:#f8fafc;color:#111827;padding:12px;line-height
 .float-back a{display:inline-block;background:#111827;color:#fff;text-decoration:none;padding:11px 22px;border-radius:25px;font-weight:900;font-size:14px;box-shadow:0 5px 15px rgba(0,0,0,.3)}
 .foot{text-align:center;font-size:12px;color:#6b7280;margin:15px 0;line-height:1.8}
 </style>
+  <style>
+  /* 1 - تكبير الخط كامل */
+  html{
+    font-size: 20px !important;
+  }
+  body{
+    font-size: 19px !important;
+    line-height: 1.9 !important;
+  }
+  h1{ font-size: 32px !important; }
+  h2{ font-size: 26px !important; }
+  h3, h4{ font-size: 22px !important; }
+  p, a, li, input{
+    font-size: 19px !important;
+  }
+
+  /* 2 - الروابط تولي على شكل أعمدة */
+  .links-container, .grid, .cards{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important; /* عمودين */
+    gap: 14px !important;
+  }
+  .links-container a, .grid a, .cards a{
+    display: block !important;
+    text-align: center !important;
+    padding: 14px !important;
+  }
+
+  /* في التليفون يولي عمود واحد باش ما يتعوجش */
+  @media (max-width: 600px){
+    .links-container, .grid, .cards{
+      grid-template-columns: 1fr !important;
+    }
+    html{ font-size: 18px !important; }
+  }
+</style>
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRBW6F6G" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
