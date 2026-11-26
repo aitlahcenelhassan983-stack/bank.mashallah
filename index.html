@@ -5,101 +5,73 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>بنك ما شاء الله | بوابات الأستاذ الحسن</title>
 <meta name="description" content="بوابة خفيفة تجمع كل مشاريع الأستاذ الحسن أيت لحسن: التربية، الأذكار، القرآن، الدروس، الأدب، والمكتبة الدينية">
-  <link rel="icon" href="logo.png.jpg">
+<link rel="icon" href="logo.png.jpg">
 <link rel="apple-touch-icon" href="logo.png.jpg">
 <link rel="manifest" href="manifest.json">
-  <link rel="canonical" href="https://aitlahcenelhassan983-stack.github.io/bank.mashallah/">
-<meta name="theme-color" content="#065f46">
+<link rel="canonical" href="https://aitlahcenelhassan983-stack.github.io/bank.mashallah/">
+<meta name="theme-color" content="#0a6444">
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NRBW6F6G');</script>
 <!-- End Google Tag Manager -->
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
+:root{--g:#0a6444;--g2:#084d34;--line:#d8e0db}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial;background:#f8fafc;color:#111827;padding:12px;line-height:1.8;padding-top:56px;padding-bottom:70px}
-.wrap{max-width:750px;margin:auto}
-/* شريط العودة الثابت في الأعلى */
-.topbar{position:fixed;top:0;right:0;left:0;z-index:100;background:#065f46;color:#fff;padding:8px 12px;display:flex;justify-content:space-between;align-items:center;gap:8px;box-shadow:0 2px 10px rgba(0,0,0,.2)}
-.topbar b{font-size:13px}
-.topbar a{background:#fff;color:#065f46;text-decoration:none;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:900;white-space:nowrap}
-.head{background:#065f46;color:#fff;border-radius:18px;padding:22px;text-align:center}
-.head h1{font-size:25px;font-weight:900}
-.head p{color:#a7f3d0;font-size:13px;margin-top:6px}
-.search{width:100%;padding:12px;border:1px solid #e5e7eb;border-radius:12px;margin:12px 0;font-size:15px;outline:none;position:sticky;top:48px;background:#fff;z-index:10}
-.gate{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:16px;margin-bottom:16px}
-.gate h2{font-size:18px;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid #f1f5f9}
-.gate h2 span{font-size:12px;background:#ecfdf5;color:#065f46;padding:3px 8px;border-radius:20px;margin-right:6px}
-.gate > p{font-size:14px;color:#374151;margin-bottom:14px}
-.link{padding:14px 8px;border-bottom:1px dashed #e5e7eb}
+html{scroll-behavior:smooth}
+body{font:400 18px/1.9 Cairo,Tahoma,Arial,sans-serif;color:#1c2420;padding-bottom:80px;
+background:#f7f8f7 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cg fill='none' stroke='%230a6444' stroke-opacity='.07' stroke-width='1.2'%3E%3Crect x='12' y='12' width='36' height='36'/%3E%3Crect x='12' y='12' width='36' height='36' transform='rotate(45 30 30)'/%3E%3C/g%3E%3C/svg%3E")}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #f59e0b;outline-offset:2px}
+.strip{background:#fff;border-bottom:1px solid var(--line);padding:8px 14px;font-size:15px;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.strip a{color:var(--g);font-weight:700;text-decoration:none;font-size:14px}
+.brand{text-align:center;padding:20px 14px 14px}
+.brand img{width:84px;height:84px;border-radius:50%;border:3px solid var(--g);object-fit:cover}
+.brand h1{font:400 44px/1.5 "Aref Ruqaa",serif;color:var(--g)}
+.brand p{color:#4d6358;font-size:15px}
+.navwrap{position:sticky;top:0;z-index:50}
+.navbar{background:var(--g);padding:10px 14px}
+.navbar button{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.45);border-radius:10px;padding:5px 16px;font:inherit;font-size:17px;cursor:pointer}
+#menu{display:none;background:var(--g2);max-height:70vh;overflow:auto}
+#menu.open{display:block}
+#menu a{display:block;color:#fff;text-decoration:none;padding:10px 18px;border-top:1px solid rgba(255,255,255,.12)}
+.wrap{max-width:750px;margin:auto;padding:16px 12px}
+.search{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;margin:0 0 16px;font:inherit;font-size:16px;background:#fff}
+.gate{background:#fff;border:1px solid var(--line);border-radius:6px;margin-bottom:20px;box-shadow:0 1px 5px rgba(0,0,0,.08);overflow:hidden;scroll-margin-top:70px}
+.gate h2{background:var(--g);color:#fff;text-align:center;font-size:22px;line-height:1.6;padding:10px 12px}
+.gate h2 span{font-size:13px;background:rgba(255,255,255,.2);color:#fff;padding:2px 10px;border-radius:20px;margin-right:8px;white-space:nowrap}
+.gate>p{padding:14px 16px 4px;font-size:16px;color:#374151}
+.link{padding:14px 16px;border-bottom:1px dashed var(--line)}
 .link:last-child{border:none}
-.link b{font-size:16px;color:#065f46}
-.link .desc{font-size:14px;color:#4b5563;margin:6px 0 10px}
+.link b{font-size:18px;color:var(--g)}
+.link .desc{font-size:15px;color:#4b5563;margin:6px 0 10px}
 .link .desc span{display:block}
-.link a{display:inline-block;background:#065f46;color:#fff;text-decoration:none;padding:8px 16px;border-radius:20px;font-size:13px;font-weight:900}
+.link a{display:inline-block;background:var(--g);color:#fff;text-decoration:none;padding:7px 20px;border-radius:6px;font-size:15px;font-weight:700}
+.link a:hover{background:var(--g2)}
 .link a.gold{background:#f59e0b;color:#111}
 .link a.blue{background:#1e3a5f}
-/* زر عائم في الأسفل */
-.float-back{position:fixed;bottom:12px;right:12px;left:12px;z-index:100;text-align:center}
-.float-back a{display:inline-block;background:#111827;color:#fff;text-decoration:none;padding:11px 22px;border-radius:25px;font-weight:900;font-size:14px;box-shadow:0 5px 15px rgba(0,0,0,.3)}
-.foot{text-align:center;font-size:12px;color:#6b7280;margin:15px 0;line-height:1.8}
-</style>
-  <style>
-  /* 1 - تكبير الخط كامل */
-  html{
-    font-size: 20px !important;
-  }
-  body{
-    font-size: 19px !important;
-    line-height: 1.9 !important;
-  }
-  h1{ font-size: 32px !important; }
-  h2{ font-size: 26px !important; }
-  h3, h4{ font-size: 22px !important; }
-  p, a, li, input{
-    font-size: 19px !important;
-  }
-
-  /* 2 - الروابط تولي على شكل أعمدة */
-  .links-container, .grid, .cards{
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important; /* عمودين */
-    gap: 14px !important;
-  }
-  .links-container a, .grid a, .cards a{
-    display: block !important;
-    text-align: center !important;
-    padding: 14px !important;
-  }
-
-  /* في التليفون يولي عمود واحد باش ما يتعوجش */
-  @media (max-width: 600px){
-    .links-container, .grid, .cards{
-      grid-template-columns: 1fr !important;
-    }
-    html{ font-size: 18px !important; }
-  }
+.float-back{position:fixed;bottom:12px;right:12px;left:12px;z-index:60;text-align:center;pointer-events:none}
+.float-back a{pointer-events:auto;display:inline-block;background:var(--g);color:#fff;text-decoration:none;padding:10px 22px;border-radius:25px;font-weight:700;font-size:15px;box-shadow:0 5px 15px rgba(0,0,0,.3)}
+.foot{text-align:center;font-size:13px;color:#6b7280;margin:15px 0}
+@media (max-width:600px){body{font-size:17px}.brand h1{font-size:36px}}
 </style>
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRBW6F6G" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<!-- شريط العودة إلى الموقع الأصلي -->
-<div class="topbar">
-  <b>🌿 بنك ما شاء الله</b>
-  <a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/">🏠 العودة إلى الموقع الأصلي</a>
+<div class="strip"><span id="dt"></span><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/">🏠 العودة إلى الموقع الأصلي</a></div>
+<div class="brand">
+<img src="logo.png.jpg" alt="شعار بنك ما شاء الله">
+<h1>بنك ما شاء الله</h1>
+<p>بوابات الأستاذ الحسن أيت لحسن | تارودانت - المغرب</p>
+</div>
+<div class="navwrap">
+<div class="navbar"><button id="mb" aria-expanded="false" aria-controls="menu">☰ القائمة</button></div>
+<nav id="menu" aria-label="بوابات الموقع"></nav>
 </div>
 
 <div class="wrap">
 
-<div class="head">
-<h1>🌿 بنك ما شاء الله</h1>
-<p>بوابات الأستاذ الحسن أيت لحسن | تارودانت - المغرب</p>
-<p style="margin-top:10px;background:rgba(255,255,255,.15);padding:7px;border-radius:10px;font-size:12px;">صفحة خفيفة تجمع كل المشاريع، مع شرح واضح لكل بوابة وكل رابط</p>
-<a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/" style="display:inline-block;margin-top:12px;background:#fff;color:#065f46;text-decoration:none;padding:9px 18px;border-radius:20px;font-weight:900;font-size:13px;">🏠 العودة إلى الموقع الأصلي</a>
-</div>
-
 <input class="search" id="s" oninput="filter()" placeholder="🔍 ابحث عن أي بوابة... مثلا: مسرحية، باقيات، دروس...">
 
-<!-- ===== البوابة 1: الرئيسية ===== -->
 <div class="gate" data-t="رئيسية">
 <h2>🏠 البوابة الرئيسية <span>الموقع الأم</span></h2>
 <p>هذه هي بداية الموقع، ومنها تنطلق إلى كل البوابات الأخرى. هنا تجد الموقع الرئيسي، والتعريف بالأستاذ، وصفحة المفاجأة.</p>
@@ -108,7 +80,6 @@ body{font-family:Arial;background:#f8fafc;color:#111827;padding:12px;line-height
 <div class="link"><b>مفاجأة</b><div class="desc"><span>ما هي؟ صفحة خاصة فيها مفاجأة للزوار.</span><span>لمن هي؟ للتلاميذ والأصدقاء والمتابعين.</span><span>لماذا تزورها؟ لأن فيها رسالة محبة وتقدير.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/mofajaa.html">دخول ↗</a></div>
 </div>
 
-<!-- ===== البوابة 2: التربية ===== -->
 <div class="gate" data-t="تربية مستجدات اخبار">
 <h2>📰 بوابة التربية والمستجدات <span>أخبار التعليم</span></h2>
 <p>هذه البوابة مخصصة لأخبار التعليم، وقواعد اللغة العربية، وأدوات الأستاذ في عمله اليومي.</p>
@@ -119,7 +90,6 @@ body{font-family:Arial;background:#f8fafc;color:#111827;padding:12px;line-height
 <div class="link"><b>إلى المريض النفسي</b><div class="desc"><span>ما هي؟ صفحة دعم نفسي وتربوي.</span><span>ماذا تجد فيها؟ كلمات هادئة تبعث الطمأنينة والأمل.</span><span>لمن هي؟ لكل من يحتاج إلى مواساة ودعم.</span></div><a class="blue" href="https://mashaallahtarbeyya-cpu.github.io/Psychologie-/">دخول ↗</a></div>
 </div>
 
-<!-- ===== البوابة 3: المتعلم ===== -->
 <div class="gate" data-t="متعلم دروس توزيع تقويم ادوات">
 <h2>🎓 بوابة المتعلم وأدوات الأستاذ <span>دروس وأدوات</span></h2>
 <p>هذه البوابة موجهة إلى المتعلم وإلى الأستاذ معًا. فيها الدروس، والتخطيط، وأدوات تنظيم القسم.</p>
@@ -130,7 +100,6 @@ body{font-family:Arial;background:#f8fafc;color:#111827;padding:12px;line-height
 <div class="link"><b>خريطة القسم - أدوات الأستاذ</b><div class="desc"><span>ما هي؟ أداة لتنظيم القسم.</span><span>ماذا تجد فيها؟ طريقة توزيع التلاميذ داخل القسم.</span><span>لماذا هي مهمة؟ لأن تنظيم القسم يساعد على التعلم.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/adawatostad.html">دخول ↗</a></div>
 </div>
 
-<!-- ===== البوابة 4: الروحية ===== -->
 <div class="gate" data-t="روحية باقيات حصن رقية قران صلاة">
 <h2>🤲 البوابة الروحية <span>الأذكار والقرآن</span></h2>
 <p>هذه البوابة هي قلب الموقع. فيها الأذكار والقرآن الكريم والرقية الشرعية، وهي الأكثر زيارة.</p>
@@ -140,7 +109,6 @@ body{font-family:Arial;background:#f8fafc;color:#111827;padding:12px;line-height
 <div class="link"><b>الختمة السريعة للقرآن الكريم</b><div class="desc"><span>ما هي؟ ختمة للقرآن الكريم.</span><span>ما ميزتها؟ أنها تحفظ مكان التوقف.</span><span>لمن هي؟ لمن يريد ختم القرآن في وقت يسير.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/">استمع ↗</a></div>
 </div>
 
-<!-- ===== البوابة 5: الأدب ===== -->
 <div class="gate" data-t="ادب مسرحية شعر نفحات مختارات">
 <h2>🎭 بوابة الأدب والمسرح <span>نفحات شعرية</span></h2>
 <p>هذه البوابة مخصصة للإبداع الأدبي. فيها المسرح المدرسي والخواطر الشعرية.</p>
@@ -148,7 +116,6 @@ body{font-family:Arial;background:#f8fafc;color:#111827;padding:12px;line-height
 <div class="link"><b>مختارات الأستاذ</b><div class="desc"><span>ما هي؟ مختارات أدبية من كتابات الأستاذ.</span><span>ماذا تجد فيها؟ من وحي السكون والرحلة، وخواطر أدبية.</span><span>لماذا تقرأها؟ لأنها كتابات صادقة تلامس القلب.</span></div><a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/favorites-v2.html">دخول ↗</a></div>
 </div>
 
-<!-- ===== البوابة 6: المكتبة ===== -->
 <div class="gate" data-t="مكتبة كتب تحميل">
 <h2>📚 بوابة المكتبة الدينية <span>13 كتابا</span></h2>
 <p>هذه البوابة مكتبة دينية كاملة. يمكنك تحميل الكتب واحدًا واحدًا، أو تحميل المكتبة كاملة.</p>
@@ -156,7 +123,6 @@ body{font-family:Arial;background:#f8fafc;color:#111827;padding:12px;line-height
 <div class="link"><b>تحميل المكتبة كاملة PDF</b><div class="desc"><span>ما هو؟ رابط واحد لتحميل كل الكتب.</span><span>ما ميزته؟ زر واحد يهبط كل المكتبة بصيغة PDF.</span><span>لمن هو؟ لمن يريد المكتبة كاملة في جهازه.</span></div><a class="gold" href="https://archive.org/download/maktaba-waqfia/">تحميل ↗</a></div>
 </div>
 
-<!-- ===== البوابة 7: التواصل ===== -->
 <div class="gate" data-t="تواصل اتصل من نحن خصوصية شروط">
 <h2>📞 بوابة التواصل والقانون <span>رسمي</span></h2>
 <p>هذه البوابة الرسمية. فيها طرق التواصل، والتعريف بالموقع، والقوانين التي تحمي الزائر.</p>
@@ -171,19 +137,32 @@ body{font-family:Arial;background:#f8fafc;color:#111827;padding:12px;line-height
 
 </div>
 
-<!-- زر العودة العائم -->
 <div class="float-back">
   <a href="https://mashaallahtarbeyya-cpu.github.io/aitlahcen/">🏠 العودة إلى الموقع الأصلي</a>
 </div>
 
 <script>
 function filter(){
-let v=document.getElementById('s').value.toLowerCase();
-document.querySelectorAll('.gate').forEach(g=>{
-let txt=g.innerText.toLowerCase();
-g.style.display=txt.includes(v)?'block':'none';
-});
+var v=document.getElementById('s').value.toLowerCase();
+document.querySelectorAll('.gate').forEach(function(g){g.style.display=g.innerText.toLowerCase().includes(v)?'block':'none'});
 }
+(function(){
+var m=document.getElementById('menu'),b=document.getElementById('mb');
+document.querySelectorAll('.gate').forEach(function(g,i){
+g.id='g'+(i+1);
+var a=document.createElement('a');a.href='#g'+(i+1);
+a.textContent=g.querySelector('h2').firstChild.textContent.trim();
+a.onclick=function(){m.classList.remove('open');b.setAttribute('aria-expanded','false')};
+m.appendChild(a);
+});
+b.onclick=function(){b.setAttribute('aria-expanded',m.classList.toggle('open'))};
+try{
+var d=new Date(),
+h=new Intl.DateTimeFormat('ar-u-ca-islamic-umalqura-nu-latn',{weekday:'long',day:'numeric',month:'long',year:'numeric'}).format(d),
+g=new Intl.DateTimeFormat('ar-u-nu-latn',{day:'numeric',month:'long',year:'numeric'}).format(d);
+document.getElementById('dt').textContent=h+' - '+g;
+}catch(e){}
+})();
 </script>
 </body>
 </html>
